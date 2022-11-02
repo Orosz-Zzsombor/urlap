@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="myscripts.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="elsodiv">
+        <form>
+            <label for="Megrendelo">Megrendelő neve:</label>
+            <input type="text" name="Megrendelo" id="Megrendelo" onfocus="fokusz(this.id)"onblur="homaly(this.id)"><br>
+            <label for="cim">Megrendelő címe:</label>
+            <input type="text" name="cim" id="cim" onfocus="fokusz(this.id)"onblur="homaly(this.id)"><br>
+            <label for="telefon">Megrendelő telefonszáma:</label>
+            <input type="tel" name="telefon" value="+36" id="telefon" onfocus="fokusz(this.id)"onblur="homaly(this.id)"><br>
+        </form>
+            <button  value="Elküld" onclick="Submit()">Elküld</button>   
+    </div>
+    <div>
+        <h1>Visszaigazolás!</h1>
+        <p>Név:<span id="igazoltNev">?</span></p>
+        <p>Cím:<span id="igazoltCim">?</span></p>
+        <p>Telfon:<span id="igazoltTelefon">?</span></p>
+    </div>
+    
+</body>
+</html>
